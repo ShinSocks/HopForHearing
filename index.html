@@ -6,20 +6,41 @@
     <body>
         <div id = "header" class="flex-container">
             <img src="./assets/logo.png" id = "logo"/>
-            <button id = "hamButton"><img src="./assets/hamburger.png" id = "hamLogo"/></button>
+            <button id = "hamButton" onclick="dropDown()"><img src="./assets/hamburger.png" id = "hamLogo"/></button>
+            <div id="dropdown-content">
+                <a href="#donateButton">Our Mission</a>
+                <a href="#inSupportJump">In Support Of</a>
+                <a href="#how">How It Started</a>
+            </div>
         </div>
         <div id = "openImg">
             <div id="imgOverlay">
                 <h1 id="overlayHeader">GIVING HOPE TO THOSE WITH HEARING LOSS</h1>
                 <div id="overlayText">EVERYONE DESERVES THE GIFT OF HEARING, YOU MIGHT BE THE NEXT VICTIM OF HEARING LOSS</div>
             </div>
-            <button id = "donateButton">Donate Now</button>
+            <button id = "donateButton" onclick = "window.open('https://secure.sunnybrook.ca/registrant/FundraisingPage.aspx?RegistrationID=5172919')">Donate Now</button>
+            
         </div>
         
-        
-        <div id = "firstInfo">
+        <div id = "first"></div>
+        <div id = "ourMission">
            <h1>Our Mission</h1>
            <p>The Salvation Army is a Christian organization that gives hope and support to vulnerable people in 400 communities across Canada and in 133 countries. The Salvation Army exists to share the love of Jesus Christ, meet human needs and be a transforming influence in the communities of our world.</p>
+
+           <div id = "why">
+            <h2 id="whyHeader">Why Support Our Cause?</h2>
+            The Salvation Army is a Christian organization that gives hope and support to vulnerable people in 400 communities across Canada and in 133 countries.<br><div id="inSupportJump"></div><br>The Salvation Army exists to share the love of Jesus Christ, meet human needs and be a transforming influence in the communities of our world.
+            
+           </div>
+           <h1>In Support Of</h1>
+           <div id ="inSupport">
+                
+                <p>The Salvation Army is a Christian organization that gives hope and support to vulnerable people in 400 communities across Canada and in 133 countries. <br><br>The Salvation Army exists to share the love of Jesus Christ, meet human needs and be a transforming influence in the communities of our world.    </p>
+                <img src="./assets/sunnybrook.PNG" id = "sunnybrook"/>
+           </div>
+           <div id = "how">
+
+           </div>
         </div>
 
         
