@@ -11,9 +11,16 @@ body {
   
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 #header {
+
     top: 0;
-    position: sticky;
+    position: absolute;
     width: 100%;
     height:10%;
     background-color:white;

@@ -18,3 +18,21 @@ function dropDown () {
     }
     
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    window.addEventListener('scroll', myFunctionForSticky);
+ 
+    var header1 = document.getElementById("header");
+  
+    var sticky = header1.offsetTop;
+  
+    function myFunctionForSticky() {
+      if (window.pageYOffset >= sticky) {
+        document.getElementById("header").style.position = "sticky";
+      } else {
+        document.getElementById("header").style.position = "absolute";
+      }
+    }
+  })
