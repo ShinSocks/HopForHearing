@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var sticky = header1.offsetTop;
   
     function myFunctionForSticky() {
-      if (window.pageYOffset >= sticky) {
-        document.getElementById("header").style.position = "sticky";
+      if (window.pageYOffset > sticky) {
+        document.getElementById("header").style.position = "fixed";
       } else {
         document.getElementById("header").style.position = "absolute";
       }
