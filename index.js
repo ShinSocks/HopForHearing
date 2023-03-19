@@ -7,6 +7,7 @@ function dropDown () {
         document.getElementById("header").style.height = "75%";
         document.getElementById("dropdown-content").style.display = "block";
         document.getElementById("hamLogo").src = "./assets/x.png"
+        document.getElementById("hamLogo").style.height = "80%"
 
     }
 
@@ -15,6 +16,7 @@ function dropDown () {
         document.getElementById("header").style.height = "10%";
         document.getElementById("dropdown-content").style.display = "none";
         document.getElementById("hamLogo").src = "./assets/ham.png"
+        document.getElementById("hamLogo").style.height = "100%"
     }
     
 }
