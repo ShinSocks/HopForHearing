@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	font-family: "Lato","Avenir Next",Arial,sans-serif;
   margin: 0;
@@ -11,8 +15,33 @@ body {
   
 }
 
+.line {
+  text-align: center;
+  position: relative;
+  
+}
 
+.line:before {
+  content: "";
+  display: block;
+  width: 13vw;
+  height: 2px;
+  background: #000;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
 
+.line:after {
+  content: "";
+  display: block;
+  width: 13vw;
+  height: 2px;
+  background: #000;
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
 #header {
 
     top: 0;
@@ -94,7 +123,7 @@ body {
   background-color: rgba(45,151,184,255);
   border-color:rgba(45,151,184,255);
   outline:none;
-  font-size:1cm;
+  font-size:2.5vh;
   color:white;
   border-top-style: hidden;
   border-right-style: hidden;
