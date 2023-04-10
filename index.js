@@ -1,11 +1,20 @@
 var opened;
 opened = false;
 
+var opened1;
+opened1 = false;
+
+var opened2;
+opened2 = false;
+
+var opened3;
+opened3 = false;
+
 function dropDown () {
     if(!opened){
         opened = true;
         document.getElementById("header").style.height = "75%";
-        document.getElementById("dropdown-content").style.display = "block";
+        document.getElementById("headerDropDown").style.display = "block";
         document.getElementById("hamLogo").src = "./assets/x.png"
         document.getElementById("hamLogo").style.height = "80%"
 
@@ -14,11 +23,71 @@ function dropDown () {
     else if(opened){
         opened = false;
         document.getElementById("header").style.height = "10%";
-        document.getElementById("dropdown-content").style.display = "none";
+        document.getElementById("headerDropDown").style.display = "none";
         document.getElementById("hamLogo").src = "./assets/ham.png"
         document.getElementById("hamLogo").style.height = "100%"
     }
     
+}
+
+function dropDown1 () {
+  if(!opened1){
+      opened1 = true;
+      document.getElementById("dropContainer1").style.height = "47%";
+      document.getElementById("dropContent1").style.display = "block";
+      //document.getElementById("hamLogo").src = "./assets/x.png"
+      //document.getElementById("hamLogo").style.height = "80%"
+
+  }
+
+  else if(opened1){
+      opened1 = false;
+      document.getElementById("dropContainer1").style.height = "5cm";
+      document.getElementById("dropContent1").style.display = "none";
+      //document.getElementById("hamLogo").src = "./assets/ham.png"
+     // document.getElementById("hamLogo").style.height = "100%"
+  }
+  
+}
+
+function dropDown2 () {
+  if(!opened2){
+      opened2 = true;
+      document.getElementById("dropContainer2").style.height = "47%";
+      document.getElementById("dropContent2").style.display = "block";
+      //document.getElementById("hamLogo").src = "./assets/x.png"
+      //document.getElementById("hamLogo").style.height = "80%"
+
+  }
+
+  else if(opened2){
+      opened2 = false;
+      document.getElementById("dropContainer2").style.height = "5cm";
+      document.getElementById("dropContent2").style.display = "none";
+      //document.getElementById("hamLogo").src = "./assets/ham.png"
+     // document.getElementById("hamLogo").style.height = "100%"
+  }
+  
+}
+
+function dropDown3 () {
+  if(!opened3){
+      opened3 = true;
+      document.getElementById("dropContainer3").style.height = "47%";
+      document.getElementById("dropContent3").style.display = "block";
+      //document.getElementById("hamLogo").src = "./assets/x.png"
+      //document.getElementById("hamLogo").style.height = "80%"
+
+  }
+
+  else if(opened3){
+      opened3 = false;
+      document.getElementById("dropContainer3").style.height = "5cm";
+      document.getElementById("dropContent3").style.display = "none";
+      //document.getElementById("hamLogo").src = "./assets/ham.png"
+     // document.getElementById("hamLogo").style.height = "100%"
+  }
+  
 }
 
 

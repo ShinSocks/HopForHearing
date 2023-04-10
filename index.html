@@ -7,7 +7,7 @@
         <div id = "header" class="flex-container">
             <img src="./assets/logo.png" id = "logo"/>
             <button id = "hamButton" onclick="dropDown()"><img src="./assets/ham.png" id = "hamLogo"/></button>
-            <div id="dropdown-content">
+            <div class="dropdown-content" id="headerDropDown">
                 <a href="#donateButton" onclick = "dropDown()">Our Mission</a>
                 <a href="#inSupportJump" onclick = "dropDown()">In Support Of</a>
                 <a href="#howJump" onclick = "dropDown()">How It Started</a>
@@ -22,11 +22,11 @@
             
         </div>
         
-        <div id = "first"></div>
-        <div id = "ourMission">
-           <h1 class = "line">Our Mission</h1>
-           <p>Hope For Hearing is a charity that gives hope and support for those suffering hearing loss and deafness in Canada. Hearing is a gift that is so important in our everyday lives that we want to help provide this gift to those who are losing it.</p>
-
+        <div class = "overall">
+            <div id = "ourMission">
+                <h1 class = "line">Our Mission</h1>
+                <p>Hope For Hearing is a charity that gives hope and support for those suffering hearing loss and deafness in Canada. Hearing is a gift that is so important in our everyday lives that we want to help provide this gift to those who are losing it.</p>
+            </div>     
            <div id = "why">
             <h2 id="whyHeader">Why Support Our Cause?</h2>
             Hearing loss is one of the leading symptoms in the word. <u>60%</u> of adults in Canada have experienced some level of hearing loss. <br><br>Hearing loss severely affects everyday communication and conversations with loved ones, leading to other dangerous conditions such as <u>dementia, Alzheimer's disease, depression, and anxiety.</u><br><div id="inSupportJump"></div><br>More recently, hearing loss rates have also risen in children, affecting their ability to communicate with parents and learn.
@@ -38,12 +38,44 @@
                 <p>All funds received are donated in support of <b>Sunnybrook Hospital.</b> We are extremely grateful to have a wonderful and trustworthy partner.<br><br>The Sunnybrook Foundation will use your donations toward the Cochlear implant department for research and aid for those in need.</p><div id="howJump"></div>
                 <img src="./assets/sunnybrook.PNG" id = "sunnybrook"/>
            </div>
-           <h1 id = "howHead">How It Started</h1>
-           <div id = "how">
-                sdsdf
-           </div>
         </div>
 
+        <div class = "infoDrop" id="dropContainer1">
+            <div class = "infoDropClosed">
+                <p>Ways To Contribute</p>
+                <img src="./assets/dropIcon.png" class="dropIcon" onclick="dropDown1()"/>
+            </div>
+            <div class = "dropdown-content" id="dropContent1">
+                
+            </div>
+        </div>
+
+        <div class = "infoDrop" id="dropContainer2">
+            <div class = "infoDropClosed">
+                <p>Share Your Story</p>
+                <img src="./assets/dropIcon.png" class="dropIcon" onclick="dropDown2()"/>
+            </div>
+            <div class = "dropdown-content" id="dropContent2">
+                
+            </div>
+        </div>
+
+        <div class = "infoDrop" id="dropContainer3">
+            <div class = "infoDropClosed">
+                <p>More On Hearing Loss</p>
+                <img src="./assets/dropIcon.png" class="dropIcon" onclick="dropDown3()"/>
+            </div>
+            <div class = "dropdown-content" id="dropContent3">
+                
+            </div>
+        </div>
+
+        <div class = "overall">
+           <h1 id = "howHead">About Us</h1>
+           <div id = "how">
+                Hope For Hearing is a student-run organization that recognizes the importance of music and communication in our lives. The realization that some individuals could not enjoy this gift due to hearing loss incentivized us to make a change.
+           </div>
+        </div>
         
     </body>
 </html>
