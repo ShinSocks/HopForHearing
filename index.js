@@ -10,6 +10,9 @@ opened2 = false;
 var opened3;
 opened3 = false;
 
+var opened4;
+opened3 = false;
+
 function dropDown () {
     if(!opened){
         opened = true;
@@ -34,7 +37,7 @@ function dropDown1 () {
   if(!opened1){
       opened1 = true;
       document.getElementById("dropContainer1").style.height = "27cm";
-      document.getElementById("dropContent1").style.display = "block";
+      
       
       //document.getElementById("hamLogo").src = "./assets/x.png"
       //document.getElementById("hamLogo").style.height = "80%"
@@ -44,7 +47,7 @@ function dropDown1 () {
   else if(opened1){
       opened1 = false;
       document.getElementById("dropContainer1").style.height = "5cm";
-      document.getElementById("dropContent1").style.display = "none";
+      
       //document.getElementById("hamLogo").src = "./assets/ham.png"
      // document.getElementById("hamLogo").style.height = "100%"
   }
@@ -55,7 +58,7 @@ function dropDown2 () {
   if(!opened2){
       opened2 = true;
       document.getElementById("dropContainer2").style.height = "27cm";
-      document.getElementById("dropContent2").style.display = "block";
+      
       //document.getElementById("hamLogo").src = "./assets/x.png"
       //document.getElementById("hamLogo").style.height = "80%"
 
@@ -64,7 +67,7 @@ function dropDown2 () {
   else if(opened2){
       opened2 = false;
       document.getElementById("dropContainer2").style.height = "5cm";
-      document.getElementById("dropContent2").style.display = "none";
+     
       //document.getElementById("hamLogo").src = "./assets/ham.png"
      // document.getElementById("hamLogo").style.height = "100%"
   }
@@ -75,7 +78,7 @@ function dropDown3 () {
   if(!opened3){
       opened3 = true;
       document.getElementById("dropContainer3").style.height = "69cm";
-      document.getElementById("dropContent3").style.display = "block";
+      
       
       //document.getElementById("hamLogo").src = "./assets/x.png"
       //document.getElementById("hamLogo").style.height = "80%"
@@ -85,7 +88,28 @@ function dropDown3 () {
   else if(opened3){
       opened3 = false;
       document.getElementById("dropContainer3").style.height = "5cm";
-      document.getElementById("dropContent3").style.display = "none";
+      
+      //document.getElementById("hamLogo").src = "./assets/ham.png"
+     // document.getElementById("hamLogo").style.height = "100%"
+  }
+  
+}
+
+function dropDown4 () {
+  if(!opened4){
+      opened4 = true;
+      document.getElementById("dropContainer4").style.height = "130cm";
+      
+      
+      //document.getElementById("hamLogo").src = "./assets/x.png"
+      //document.getElementById("hamLogo").style.height = "80%"
+
+  }
+
+  else if(opened4){
+      opened4 = false;
+      document.getElementById("dropContainer4").style.height = "5cm";
+      
       //document.getElementById("hamLogo").src = "./assets/ham.png"
      // document.getElementById("hamLogo").style.height = "100%"
   }

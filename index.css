@@ -119,7 +119,7 @@ body {
 }
 
 .dropdown-content {
-  display: none;
+  display:block;
   
   
 }
@@ -199,8 +199,7 @@ body {
   color:white;
   width:100%;
   border-radius: 30px;
-  background: rgb(69,191,184);
-  background: linear-gradient(to top right, rgba(69,191,184,1) 0%, rgba(96,175,219,1) 100%);
+  background: linear-gradient(224.26deg, #60AFDB 31.52%, #45BFB8 159.2%);
   margin-top:3vh;
   padding-left:3vw;
   padding-right:3vw;
@@ -231,8 +230,7 @@ body {
 }
 
 .infoDropClosed {
-  background: rgb(69,191,184);
-  background: linear-gradient(to top right, rgba(69,191,184,1) 0%, rgba(96,175,219,1) 100%);
+  background: linear-gradient(224.26deg, #60AFDB 31.52%, #45BFB8 159.2%);
   color:white;
   display: flex;
   justify-content: space-between;
@@ -250,14 +248,17 @@ body {
 
 #dropContainer1 {
   margin-top:5vh;
+  overflow: hidden;
 }
 
 #dropContainer2 {
   margin-top:1vh;
+  overflow: hidden;
 }
 
 #dropContainer3 {
   margin-top:1vh;
+  overflow: hidden;
 }
 
 #dropContent1 {
@@ -334,4 +335,77 @@ body {
   margin-top:60px;
 }
 
+#second {
+  padding-top:1vh;
+  text-align: left;
+  font-size:0.8cm;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+#dropContainer4 {
+  overflow: hidden;
+  margin-top: 5vh;
+  background-color: rgb(96,175,219);
+}
+
+#dropContent4{
+  height:130cm;
+  width:100%;
+}
+
+.headTable {
+  margin-top: 60px;
+  width: 100%;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size:1cm;
+}
+
+.headTable td {
+  width : 50%;
+  text-align: center;
+  
+}
+
+.headTable div {
+  margin: auto;
+}
+
+.headTable h1 {
+  margin-bottom:0;
+}
+
+.headTable h3 {
+  margin-top:20px;
+}
+
+.headTable p {
+  margin-top:1px;
+  font-size:1.1cm
+}
+
+
+.headShotContainer {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  background-image: url("./assets/roy.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#contactUs {
+  width:100%;
+  margin-top: 5vh;
+  background: linear-gradient(224.26deg, #60AFDB 31.52%, #45BFB8 159.2%);
+  text-align: center;
+  color: white;
+  padding:20px;
+}
+
+#contactUs a {
+  color: white;
+}
 
