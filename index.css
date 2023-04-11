@@ -181,24 +181,27 @@ body {
   background: white;
   width:100%;
   text-align: center;
-  font-size:1.1cm;
-  padding-left:5%;
-  padding-right:5%;
-  
+  font-size:0.8cm;
+  padding-left:6%;
+  padding-right:6%;
+  font-family: 'Nunito', sans-serif;
 }
 
 #ourMission {
   width:100%;
+  text-align:left;
+  margin-top:3vh;
+  
 }
 
 #why {
   text-align: left;
   color:white;
-  width:94%;
+  width:100%;
   border-radius: 30px;
   background: rgb(69,191,184);
   background: linear-gradient(to top right, rgba(69,191,184,1) 0%, rgba(96,175,219,1) 100%);
-  margin-left:3%;
+  margin-top:3vh;
   padding-left:3vw;
   padding-right:3vw;
   padding-top:.1vh;
@@ -212,6 +215,7 @@ body {
 
 #inSupport {
   text-align: left;
+  margin-top:3vh;
 }
 #sunnybrook {
   margin-top: 1vh;;
@@ -222,7 +226,7 @@ body {
   width: 100vw;
   height: 5cm;
   font-size:1.5cm;
-  transition-duration: 300ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -244,32 +248,89 @@ body {
 }
 
 
+#dropContainer1 {
+  margin-top:5vh;
+}
+
+#dropContainer2 {
+  margin-top:1vh;
+}
+
+#dropContainer3 {
+  margin-top:1vh;
+}
+
 #dropContent1 {
-  height:100%;
+  height:1080px;
   width:100%;
   background-color: rgba(0,0,0,0.65);
   background-blend-mode: overlay;
-  background-image: url("./assets/placeholder2.jpg");
+  background-image: url("./assets/drop1.JPG");
   background-size: cover;
   background-position: center;
+  padding-left:7%;
+  padding-right: 7%;
+  padding-top:2%;
+  font-family: 'Nunito', sans-serif;
+  font-size:40px;
+  color:white;
 }
 
 #dropContent2 {
-  height:100%;
+  height:1080px;
   width:100%;
   background-color: rgba(0,0,0,0.65);
   background-blend-mode: overlay;
-  background-image: url("./assets/placeholder2.jpg");
+  background-image: url("./assets/drop2.JPG");
   background-size: cover;
   background-position: center;
+  padding-left:7%;
+  padding-right: 7%;
+  padding-top:2%;
+  font-family: 'Nunito', sans-serif;
+  font-size:40px;
+  color:white;
 }
 
 #dropContent3 {
-  height:100%;
+  height:2710px;
   width:100%;
   background-color: rgba(0,0,0,0.65);
   background-blend-mode: overlay;
-  background-image: url("./assets/placeholder2.jpg");
+  background-image: url("./assets/drop3.JPG");
   background-size: cover;
   background-position: center;
+  padding-left:7%;
+  padding-right: 7%;
+  padding-top:2%;
+  font-family: 'Nunito', sans-serif;
+  font-size:40px;
+  color:white;
 }
+
+.dropdown-content p {
+  margin-top:15px;
+}
+
+.dropdown-content h2 {
+  margin-bottom:0;
+}
+
+.baseButton {
+  margin-top:30px;
+  width: 439.12px;
+  height: 111.9px;
+  background: #FFFFFF;
+  box-shadow: 4px 8px 46px rgba(0, 0, 0, 0.4);
+  border-radius: 63px;
+  font-size: 50px;
+  line-height: 62px;
+  text-align: center;
+  color: #5FAEDB;
+}
+
+#shareButton {
+  margin-top:60px;
+}
+
+

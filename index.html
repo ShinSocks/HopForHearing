@@ -1,6 +1,9 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
         <script src="index.js"></script>
     </head>
     <body>
@@ -32,9 +35,9 @@
             Hearing loss is one of the leading symptoms in the word. <u>60%</u> of adults in Canada have experienced some level of hearing loss. <br><br>Hearing loss severely affects everyday communication and conversations with loved ones, leading to other dangerous conditions such as <u>dementia, Alzheimer's disease, depression, and anxiety.</u><br><div id="inSupportJump"></div><br>More recently, hearing loss rates have also risen in children, affecting their ability to communicate with parents and learn.
             
            </div>
-           <h1 class = "line">In Support Of</h1>
+           
            <div id ="inSupport">
-                
+                <h1 class = "line">In Support Of</h1>
                 <p>All funds received are donated in support of <b>Sunnybrook Hospital.</b> We are extremely grateful to have a wonderful and trustworthy partner.<br><br>The Sunnybrook Foundation will use your donations toward the Cochlear implant department for research and aid for those in need.</p><div id="howJump"></div>
                 <img src="./assets/sunnybrook.PNG" id = "sunnybrook"/>
            </div>
@@ -46,7 +49,13 @@
                 <img src="./assets/dropIcon.png" class="dropIcon" onclick="dropDown1()"/>
             </div>
             <div class = "dropdown-content" id="dropContent1">
-                
+                <h2>Do you own a business?</h2>
+                <p>We happily look forward to any potential company partners or sponsors. Contact us for further inquires or proposals!</p>
+
+                <h2>Are you a Student?</h2>
+                <p>We would love to get you and your school involved in our journey.</p>
+
+                <button id="contactButton" class = "baseButton" onclick = "window.open('https://secure.sunnybrook.ca/registrant/FundraisingPage.aspx?RegistrationID=5172919')"><b>Contact Us</b></button>
             </div>
         </div>
 
@@ -56,7 +65,8 @@
                 <img src="./assets/dropIcon.png" class="dropIcon" onclick="dropDown2()"/>
             </div>
             <div class = "dropdown-content" id="dropContent2">
-                
+                <h2>We would love to know your story and experiences relating to hearing loss. Whether you have personal experience or have a close family member, feel free to share your story with us to further spread awareness.</h2>
+                <button id="shareButton" class = "baseButton" onclick = "window.open('https://secure.sunnybrook.ca/registrant/FundraisingPage.aspx?RegistrationID=5172919')"><b>Share Now</b></button>
             </div>
         </div>
 
@@ -66,7 +76,21 @@
                 <img src="./assets/dropIcon.png" class="dropIcon" onclick="dropDown3()"/>
             </div>
             <div class = "dropdown-content" id="dropContent3">
+                <h2>How many people experience Hearing Loss?</h2>
+                <p>Currently, <b>60%</b> of adults in Canada experience hearing loss. More notably, <b>78%</b> of Canada's seniors have measurable hearing loss.</p>
+
+                <h2>How Hearing Loss affects us.</h2>
+                <p>Hearing loss can make it difficult to communicate with others, which can lead to social isolation, misunderstandings, and frustration. This impacts daily life, and harms personal relationships. <u>It can cause anxiety and depression because of this social isolation and lead to dementia and Alzheimer's.</u><br><br>Hearing loss often causes seniors to withdraw from social events and spend more time at home. This can lead to <b>depression</b> resulting in worsening eating, sleeping and physical activity habits</p>
                 
+                <h2>Is there a cure for Hearing Loss?</h2>
+                <p><b>90%</b> of people with hearing loss can improve their hearing, communication and quality of life through environmental changes, hearing aids, etc...</p>
+
+                <h2>What causes Hearing Loss?</h2>
+                <p>A prevalent issue that leads to a decline in hearing ability is caused by exposure to <b><i>loud noises, the natural aging process, illnesses, and genetic differences.</i></b> As people grow older, the likelihood of experiencing hearing loss increases, with approximately one-third of older individuals affected.</p>
+                
+                <p>If you have anymore question feel free to ask us and we'll happily reply as soon as we can.</p>
+
+                <button class="baseButton" id="questionButton">Questions?</button>
             </div>
         </div>
 
