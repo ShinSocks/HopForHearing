@@ -33,7 +33,7 @@ function dropDown () {
 function dropDown1 () {
   if(!opened1){
       opened1 = true;
-      document.getElementById("dropContainer1").style.height = "1080px";
+      document.getElementById("dropContainer1").style.height = "27cm";
       document.getElementById("dropContent1").style.display = "block";
       
       //document.getElementById("hamLogo").src = "./assets/x.png"
@@ -54,7 +54,7 @@ function dropDown1 () {
 function dropDown2 () {
   if(!opened2){
       opened2 = true;
-      document.getElementById("dropContainer2").style.height = "1080px";
+      document.getElementById("dropContainer2").style.height = "27cm";
       document.getElementById("dropContent2").style.display = "block";
       //document.getElementById("hamLogo").src = "./assets/x.png"
       //document.getElementById("hamLogo").style.height = "80%"
@@ -74,7 +74,7 @@ function dropDown2 () {
 function dropDown3 () {
   if(!opened3){
       opened3 = true;
-      document.getElementById("dropContainer3").style.height = "2710px";
+      document.getElementById("dropContainer3").style.height = "64cm";
       document.getElementById("dropContent3").style.display = "block";
       
       //document.getElementById("hamLogo").src = "./assets/x.png"
