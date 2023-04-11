@@ -74,7 +74,7 @@ function dropDown2 () {
 function dropDown3 () {
   if(!opened3){
       opened3 = true;
-      document.getElementById("dropContainer3").style.height = "64cm";
+      document.getElementById("dropContainer3").style.height = "69cm";
       document.getElementById("dropContent3").style.display = "block";
       
       //document.getElementById("hamLogo").src = "./assets/x.png"
