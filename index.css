@@ -402,10 +402,13 @@ body {
   background: linear-gradient(224.26deg, #60AFDB 31.52%, #45BFB8 159.2%);
   text-align: center;
   color: white;
-  padding:20px;
+  padding-top:20px;
+  padding-bottom:40px;
+  font-size:0.8cm
 }
 
 #contactUs a {
+  
   color: white;
 }
 
