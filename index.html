@@ -4,21 +4,40 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        
         <script src="index.js"></script>
 
     
         
     </head>
     <body>
-        <div id = "header" class="flex-container">
-            <img src="./assets/logo.png" id = "logo"/>
-            <button id = "hamButton" onclick="dropDown()"><img src="./assets/ham.png" id = "hamLogo"/></button>
+        <div id = "header">
+            <div id="headInside">
+                <img src="./assets/logo.png" id = "logo"/>
+            
+                <div id = "langHam">
+                    <div class="language-switcher">
+                        <div class="language-option active" id="eng-option">ENG</div>
+                        <div class="separator"></div>
+                        <div class="language-option" id="ch-option">中</div>
+                    </div>
+                    <button id = "hamButton" onclick="dropDown()"><img src="./assets/ham.png" id = "hamLogo"/></button>
+                </div>
+            </div>
+
             <div class="dropdown-content" id="headerDropDown">
                 <a href="#donateButton" onclick = "dropDown()">Our Mission</a>
                 <a href="#inSupportJump" onclick = "dropDown()">In Support Of</a>
-                <a href="#howJump" onclick = "dropDown()">Learning More</a>
+    
+                <a  onclick = "dropDown();dropDown1(false);scrollToSection('dropContainer1')">Ways To Contribute</a>
+                <a  onclick = "dropDown();dropDown2(false);scrollToSection('dropContainer2')">Share Your Story</a>
+                <a  onclick = "dropDown();dropDown3(false);scrollToSection('dropContainer3')">More On Hearing Loss</a>
+                <a  onclick = "dropDown();scrollToSection('howHead')">About Us</a>
             </div>
+        
+            
         </div>
+        
         <div id = "openImg">
             <div id="imgOverlay">
                 <h1 id="overlayHeader">GIVING HOPE TO THOSE WITH HEARING LOSS</h1>
@@ -30,33 +49,33 @@
         
         <div class = "overall">
             <div id = "ourMission">
-                <h1 class = "line">Our Mission</h1>
-                <p>Hope For Hearing is a charity that gives hope and support for those suffering hearing loss and deafness in Canada. Hearing is a gift that is so important in our everyday lives that we want to help provide this gift to those who are losing it.</p>
+                <h1 class = "line" id = "ourMissionH1">Our Mission</h1>
+                <p id="ourMissionP">Hope For Hearing is a charity that gives hope and support for those suffering hearing loss and deafness in Canada. Hearing is a gift that is so important in our everyday lives that we want to help provide this gift to those who are losing it.</p>
             </div>     
            <div id = "why">
-            <h2 id="whyHeader">Why Support Our Cause?</h2>
-            Hearing loss is one of the leading symptoms in the word. <u>60%</u> of adults in Canada have experienced some level of hearing loss. <br><br>Hearing loss severely affects everyday communication and conversations with loved ones, leading to other dangerous conditions such as <u>dementia, Alzheimer's disease, depression, and anxiety.</u><br><div id="inSupportJump"></div><br>More recently, hearing loss rates have also risen in children, affecting their ability to communicate with parents and learn.
-            
+                <h2 id="whyHeader">Why Support Our Cause?</h2>
+                Hearing loss is one of the leading symptoms in the word. <u>60%</u> of adults in Canada have experienced some level of hearing loss. <br><br>Hearing loss severely affects everyday communication and conversations with loved ones, leading to other dangerous conditions such as <u>dementia, Alzheimer's disease, depression, and anxiety.</u><br><div id="inSupportJump"></div><br>More recently, hearing loss rates have also risen in children, affecting their ability to communicate with parents and learn.
            </div>
            
            <div id ="inSupport">
-                <h1 class = "line">In Support Of</h1>
-                <p>All funds received are donated in support of <b>Sunnybrook Hospital.</b> We are extremely grateful to have a wonderful and trustworthy partner.<br><br>The Sunnybrook Foundation will use your donations toward the Cochlear implant department for research and aid for those in need.</p><div id="howJump"></div>
+                <h1 class = "line" id="inSupportH1">In Support Of</h1>
+                <p id="inSupportP">All funds received are donated in support of <b>Sunnybrook Hospital.</b> We are extremely grateful to have a wonderful and trustworthy partner.<br><br>The Sunnybrook Foundation will use your donations toward the Cochlear implant department for research and aid for those in need.</p>
                 <img src="./assets/sunnybrook.PNG" id = "sunnybrook"/>
+                <div id="howJump"></div>
            </div>
         </div>
 
         <div class = "infoDrop" id="dropContainer1">
             <div class = "infoDropClosed">
-                <p>Ways To Contribute</p>
+                <p id="infoDropP1">Ways To Contribute</p>
                 <img src="./assets/dropIcon.png" class="dropIcon" onclick="dropDown1()"/>
             </div>
             <div class = "dropdown-content" id="dropContent1">
-                <h3>Do you own a business?</h3>
-                <p>We happily look forward to any potential company partners or sponsors. Contact us for further inquires or proposals!</p>
+                <h3 id="infoDropH31">Do you own a business?</h3>
+                <p id="infoDropP12">We happily look forward to any potential company partners or sponsors. Contact us for further inquires or proposals!</p>
 
-                <h3>Are you a Student?</h3>
-                <p>We would love to get you and your school involved in our journey.</p>
+                <h3 id="infoDropH32">Are you a Student?</h3>
+                <p id="infoDropP13">We would love to get you and your school involved in our journey.</p>
 
                 <button id="contactButton" class = "baseButton" onclick = "window.open('https://secure.sunnybrook.ca/registrant/FundraisingPage.aspx?RegistrationID=5172919')"><b>Contact Us</b></button>
             </div>
@@ -64,34 +83,34 @@
 
         <div class = "infoDrop" id="dropContainer2">
             <div class = "infoDropClosed">
-                <p>Share Your Story</p>
+                <p id="infoDropP2">Share Your Story</p>
                 <img src="./assets/dropIcon.png" class="dropIcon" onclick="dropDown2()"/>
             </div>
             <div class = "dropdown-content" id="dropContent2">
-                <h3>We would love to know your story and experiences relating to hearing loss. Whether you have personal experience or have a close family member, feel free to share your story with us to further spread awareness.</h3>
+                <h3 id="infoDropP2H3">We would love to know your story and experiences relating to hearing loss. Whether you have personal experience or have a close family member, feel free to share your story with us to further spread awareness.</h3>
                 <button id="shareButton" class = "baseButton" onclick = "window.open('https://secure.sunnybrook.ca/registrant/FundraisingPage.aspx?RegistrationID=5172919')"><b>Share Now</b></button>
             </div>
         </div>
 
         <div class = "infoDrop" id="dropContainer3">
             <div class = "infoDropClosed">
-                <p>More On Hearing Loss</p>
+                <p id="infoDropP3">More On Hearing Loss</p>
                 <img src="./assets/dropIcon.png" class="dropIcon" onclick="dropDown3()"/>
             </div>
             <div class = "dropdown-content" id="dropContent3">
-                <h3>How many people experience Hearing Loss?</h3>
-                <p>Currently, <b>60%</b> of adults in Canada experience hearing loss. More notably, <b>78%</b> of Canada's seniors have measurable hearing loss.</p>
+                <h3 id="infoDropP3H31">How many people experience Hearing Loss?</h3>
+                <p id="infoDropP31">Currently, <b>60%</b> of adults in Canada experience hearing loss. More notably, <b>78%</b> of Canada's seniors have measurable hearing loss.</p>
 
-                <h3>How Hearing Loss affects us.</h3>
-                <p>Hearing loss can make it difficult to communicate with others, which can lead to social isolation, misunderstandings, and frustration. This impacts daily life, and harms personal relationships. <u>It can cause anxiety and depression because of this social isolation and lead to dementia and Alzheimer's.</u><br><br>Hearing loss often causes seniors to withdraw from social events and spend more time at home. This can lead to <b>depression</b> resulting in worsening eating, sleeping and physical activity habits</p>
+                <h3 id="infoDropP3H32">How Hearing Loss affects us.</h3>
+                <p id="infoDropP32">Hearing loss can make it difficult to communicate with others, which can lead to social isolation, misunderstandings, and frustration. This impacts daily life, and harms personal relationships. <u>It can cause anxiety and depression because of this social isolation and lead to dementia and Alzheimer's.</u><br><br>Hearing loss often causes seniors to withdraw from social events and spend more time at home. This can lead to <b>depression</b> resulting in worsening eating, sleeping and physical activity habits</p>
                 
-                <h3>Is there a cure for Hearing Loss?</h3>
-                <p><b>90%</b> of people with hearing loss can improve their hearing, communication and quality of life through environmental changes, hearing aids, etc...</p>
+                <h3 id="infoDropP3H33">Is there a cure for Hearing Loss?</h3>
+                <p id="infoDropP33"><b>90%</b> of people with hearing loss can improve their hearing, communication and quality of life through environmental changes, hearing aids, etc...</p>
 
-                <h3>What causes Hearing Loss?</h3>
-                <p>A prevalent issue that leads to a decline in hearing ability is caused by exposure to <b><i>loud noises, the natural aging process, illnesses, and genetic differences.</i></b> As people grow older, the likelihood of experiencing hearing loss increases, with approximately one-third of older individuals affected.</p>
+                <h3 id="infoDropP3H34">What causes Hearing Loss?</h3>
+                <p id="infoDropP34">A prevalent issue that leads to a decline in hearing ability is caused by exposure to <b><i>loud noises, the natural aging process, illnesses, and genetic differences.</i></b> As people grow older, the likelihood of experiencing hearing loss increases, with approximately one-third of older individuals affected.</p>
                 
-                <p>If you have anymore question feel free to ask us and we'll happily reply as soon as we can.</p>
+                <p id="infoDropP5">If you have anymore question feel free to ask us and we'll happily reply as soon as we can.</p>
 
                 <button class="baseButton" id="questionButton">Questions?</button>
             </div>
