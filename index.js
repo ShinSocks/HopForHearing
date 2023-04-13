@@ -34,6 +34,9 @@ function dropDown () {
 }
 
 function dropDown1 (toggle = true) {
+  if(!toggle){
+    document.getElementById("end").style.height = "50cm";
+  }
   if(!opened1){
     
       opened1 = true;
@@ -56,10 +59,16 @@ function dropDown1 (toggle = true) {
       //document.getElementById("hamLogo").src = "./assets/ham.png"
      // document.getElementById("hamLogo").style.height = "100%"
   }
+  setTimeout(function(){
+    document.getElementById("end").style.height = "0";
+  }, 100);
   
 }
 
 function dropDown2 (toggle = true) {
+  if(!toggle){
+    document.getElementById("end").style.height = "50cm";
+  }
   if(!opened2){
       opened2 = true;
       document.getElementById("dropContainer2").style.height = "27cm";
@@ -76,10 +85,18 @@ function dropDown2 (toggle = true) {
       //document.getElementById("hamLogo").src = "./assets/ham.png"
      // document.getElementById("hamLogo").style.height = "100%"
   }
+
+  setTimeout(function(){
+    document.getElementById("end").style.height = "0";
+  }, 1000); 
+  
   
 }
 
 function dropDown3 (toggle = true) {
+  if(!toggle){
+    document.getElementById("end").style.height = "50cm";
+  }
   if(!opened3){
       opened3 = true;
       document.getElementById("dropContainer3").style.height = "69cm";
@@ -97,7 +114,9 @@ function dropDown3 (toggle = true) {
       //document.getElementById("hamLogo").src = "./assets/ham.png"
      // document.getElementById("hamLogo").style.height = "100%"
   }
-  
+  setTimeout(function(){
+    document.getElementById("end").style.height = "0";
+  }, 100);
 }
 
 function dropDown4 (toggle = true) {
@@ -139,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
     engOption.addEventListener('click', function() {
       engOption.classList.add('active');
       chOption.classList.remove('active');
-      window.open('www.hopeforhearing.ca')
+      location.reload();
     });
   
     chOption.addEventListener('click', function() {

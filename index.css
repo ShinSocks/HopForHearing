@@ -237,9 +237,14 @@ body {
   width:100%;
   text-align: center;
   font-size:0.8cm;
-  padding-left:6%;
-  padding-right:6%;
+  padding-left:10%;
+  padding-right:10%;
+  line-height: 40px;
   font-family: 'Nunito', sans-serif;
+}
+
+.overall p {
+  font-size:0.6cm;
 }
 
 #ourMission {
@@ -394,8 +399,12 @@ body {
   padding-top:1vh;
   text-align: left;
   font-size:0.8cm;
-  padding-left: 6%;
-  padding-right: 6%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#second p {
+  font-size:0.6cm;
 }
 
 #dropContainer4 {
@@ -444,8 +453,8 @@ body {
 .headShotContainer {
   overflow: hidden;
   border-radius: 50%;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   background-image: url("./assets/roy.jpg");
   background-size: cover;
   background-position: center;
@@ -459,11 +468,22 @@ body {
   color: white;
   padding-top:20px;
   padding-bottom:40px;
-  font-size:0.8cm
+  font-size:0.8cm;
+  
 }
 
 #contactUs a {
   
   color: white;
+}
+
+#volunteer {
+  margin-top:0;
+}
+
+.facultyName {
+  padding-right: 70px;
+  font-size: .8cm;
+
 }
 
